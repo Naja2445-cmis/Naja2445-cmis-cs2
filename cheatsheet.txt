@@ -1,0 +1,28 @@
+~ home
+$- tells what to do
+ls- view content of the folder
+blue text- folder
+white text- normal text 
+cd- change directory
+git add- add to file of repository
+git commit -m- commit all changes
+git push- puse all changes
+git status- view the status of the file
+R (tab)- README .md files
+Green text- who you are and where you are
+N (tab)- naja2445-cmis-wd
+ch (tab)- cheatsheet.txt 
+L (tab)- LICENSE
+cd.. - go up to the top
+<> </> - one element
+<> - tag 
+sftp naja2445@cmis-hsteacher : open sftp 
+rm - remove
+!ls - what's in public_html folder
+ls* - check all files in repository folder
+put * - add all files in repository folder 
+rm * - remove all files in repository folder 
+To view my server----- python -m SimpleHTTPServer
+How I view my work on the  production server---cmishsteacher/~user or localhost:8000
+ctrl U --- view page source
+mkdir--make a folder
