@@ -6,5 +6,13 @@ lengthRectangle = int(8)
 heightRectangle = int(4)
 monthAge = myAge * 12
 yearsToLive = 80 - myAge
-heightInFeet = float(5.2)  
+heightInFeet = myHeight * 3.28084   
+average height = myHeight - 157.3 (average height)
+areaSquare = int(9)
+halfVolumeCube = int(13)
+AreaOfRec = lengthRectangle * heightRectangle /9
+print "I'm" + str(myAge) + 
+
+
+
 
