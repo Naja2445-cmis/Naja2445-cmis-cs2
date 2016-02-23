@@ -17,3 +17,8 @@ def main():
 	print output(name, x, y, z)
 
 main() 
+
+J. D. Robinson Formula (1983)
+
+52 kg + 1.9 kg per inch over 5 feet       (man)
+49 kg + 1.7 kg per inch over 5 feet       (woman)
