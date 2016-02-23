@@ -56,6 +56,9 @@ print center ("Hello")
 def msg_box(word):
 	return "+" + ((len(word)+4)*"-") + "+" + "\n" + "|" + (2*" ") + (word) + (2*" ") + "|" + "\n" + "+" + ((len(word)+4)*"-") + "+" 
 
+print msg_box("Hello")
+print msg_box("I eat cats!")
+
 a = add(3, 4)
 b = sub(5, 3)
 c = mul(4, 4)
@@ -65,8 +68,20 @@ f = circle_area(5)
 g = sphere_volume(5)
 h = avg_volume(10, 20)
 i = area(1, 2, 2.5)
-j = 
-k =
+j = right_align("Hello")
+k = center("Hello")
+
+print msg_box(str(a))
+print msg_box(str(b))
+print msg_box(str(c))
+print msg_box(str(d))
+print msg_box(str(e))
+print msg_box(str(f))
+print msg_box(str(g))
+print msg_box(str(h))
+print msg_box(str(i))
+print msg_box(str(j))
+print msg_box(str(k))
 
 
 
