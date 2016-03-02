@@ -42,9 +42,9 @@ import math
 
 def diameter(x):
 	 return 2*(math.sqrt(x/math.pi))
-def all_diameter(d1,d2,d3):
-	return d1+d2+d3
-def output(d1,d2,d3,total):
+def all_diameter(dia1,dia2,dia3):
+	return dia1+dia2+dia3
+def output(dia1,dia2,dia3,total):
 	 out="""
 
 Circle      Diameter
@@ -53,7 +53,7 @@ c2             {}
 c3             {}
 Totals:        {}
 
-""".format(d1,d2,d3,total)
+""".format(dia1,dia2,dia3,total)
    return out
 
 def main():
@@ -61,12 +61,12 @@ def main():
    C2=raw_input("Area of cr2: ")
    C3=raw_input("Area of cr3: ")
   
-   d1=diameter(float(C1))
-   d2=diameter(float(C2))
-   d3=diameter(float(C3))
-   total=total_diameter(d1,d2,d3)
+   dia1=diameter(float(C1))
+   dia2=diameter(float(C2))
+   dia3=diameter(float(C3))
+   total=all_diameter(dia1,dia2,dia3)
   
-   out=output(d1,d2,d3,total)
+   out=output(dia1,dia2,dia3,total)
    print out
 
 main ()
