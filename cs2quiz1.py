@@ -27,9 +27,9 @@
 #
 #6 3pts) What are the 3 phases that every computer program has? What happens in
 #        each of them
-#	1:floating value
-#	2:interger
-#	3:string
+#	1:input
+#	2:output
+#	3:process
 #
 #Part 2: Programming (25 points)
 #Write a program that asks the user for the areas of 3 circles.
@@ -37,30 +37,39 @@
 #of the 3 circles.
 #Finally, it should produce output like this:
 
-import math
-def divide(a1):
-	c1 = math.sqrt(a1)/math.pi
-	return c1
-def divide (a2):
-	c2 = math.sqrt(a2)/math.pi
-	return c2
-def divide(a3):
-	c2 = math.sqrt(a3)/math.pi
-	return a3
-def output(c1, c2, c3):
-	return """
-{} + {} = {}
-""". format(c1, c2, c3)
 
+import math
+
+def diameter(x):
+	 return 2*(math.sqrt(x/math.pi))
+def all_diameter(d1,d2,d3):
+	return d1+d2+d3
+def output(d1,d2,d3,total):
+	 out="""
+
+Circle      Diameter
+c1             {}
+c2             {}
+c3             {}
+Totals:        {}
+
+""".format(d1,d2,d3,total)
+   return out
 
 def main():
-	c1 = raw_input("area of circle1")
-	c2 = raw_input("area of circle2")
-	c3 = raw_input("area of circle3")
-	
+   C1=raw_input("Area of cr1: ")
+   C2=raw_input("Area of cr2: ")
+   C3=raw_input("Area of cr3: ")
+  
+   d1=diameter(float(C1))
+   d2=diameter(float(C2))
+   d3=diameter(float(C3))
+   total=total_diameter(d1,d2,d3)
+  
+   out=output(d1,d2,d3,total)
+   print out
 
-def circle1(c1):
-	
+main ()
 
 #Circle  Diameter
 #c1      ...
