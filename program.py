@@ -1,4 +1,4 @@
-def BMR(weight, height, age):
+def bmr(weight, height, age):
     BMR = 10 * int(weight) + float(6.25) * int(height) - 5 * int(age) + 5
     return BMR
 
@@ -14,7 +14,7 @@ def main():
     weight = raw_input("What is your weight? (kg)")
     height = raw_input("What is your height?(cm) ")
     age = raw_input("How old are you?")
-    BMR = 10 * int(weight) + float(6.25) * int(height) - 5 * int(age) + 5
+    BMR = bmr(weight, height, age)
     print output(weight, height, age, BMR)
 
 main()
