@@ -1,3 +1,7 @@
+def BMR(weight, height, age):
+    BMR = 10 * int(weight) + float(6.25) * int(height) - 5 * int(age) + 5
+    return BMR
+
 def output(weight, height, age, BMR):
 	return """
 Your weight is {} kg.
