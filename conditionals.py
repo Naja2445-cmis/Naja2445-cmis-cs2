@@ -1,38 +1,38 @@
-# My game will be like choosing your motorcycle to race with another player. You can pick many different kinds motorcycle, each motorcycle will have it's maximum speed. You have to choose the one that you think can win with it. You also can choose your opponent's motorcycle for them. You can't be sure if you're going to win because your speed will have to be multipled with a random number that the computer will choose.
+#my game will be a quiz game,the game will ask you some common knowledge stuff, and if you get it all right, you will win the game.
 
-import math
-import random
+def output(questionone):
+	if questionone == "apple": 
+		return True
+	else:
+		return False
 
-def speed(motorcycle):
+def output2(questiontwo):
+	if questiontwo == "amazon": 
+		return True
+	else:
+		return False
 
-	if  motorcycle == ""
-		topspeed = 
+def output2(questionthree):
+	if questionthree == "alaska": 
+		return True
+	else:
+		return False
 
-	elif motorcycle == ""
-		topspeed = 
-
-	elif motorcycle == ""
-		topspeed = 
-
-	elif motorcycle == ""
-		topspeed = 
-
-	elif motorcycle == ""
-		topspeed = 284 km/h
-
-	elif motorcycle == ""
-		topspeed = 325 km/h
-
-	elif motorcycle == "Kawasaki Ninja H2"
-		topspeed = 340 km/h
-
-	elif motorcycle == "MTT Turbine Y2K"
-		topspeed = 365 km/h
-
-	elif motorcycle == "Suzuki Hasyabusa"
-		topspeed = 397 km/h
-
-	elif motorcycle == "Dodge Tomahawk"
-		topspeed = 560 km/h
+def output2(questionfour):
+	if questionthree == "Poseidon": 
+		return True
+	else:
+		return False
 
 
+
+def main():
+	questionone = str(raw_input("What falling object is said to have Isaac Newton's theories about gravity?"))
+	print output(questionone)
+	questiontwo = str(raw_input("Where in the world does the largest tropical rainforest grow?"))
+	questionthree = str(raw_input("Which American state is nearest to the former Soviet Union?"))
+	questionfour = str(raw_input("In Roman mythology, Neptune is the quivalent to which Greek god?"))
+	questionfive = str(raw_input("How many rings are on the Olympics flag?"))
+	questionsix = str(raw_input("Which contains the maximum number of people?"))
+	questionseven = str(raw_input("What is the name of Leonardo Da Vinvi's moust famous work?"))
+main()
