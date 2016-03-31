@@ -1,42 +1,42 @@
 #PART 1: Terminology
 #1) Give 3 examples of boolean expressions.
-#a)True
-#b)False
-#c)
+#a) 4 * 8 == 1 * 32
+#b) 2 * 7 <= 8*6
+#c) 2 * 7 => 2 *4
 #
 #2) What does 'return' do?
-#when you type return it will spits out something. 
+#when you type return it will spits out something, like the variable of a function.  
 #
 #
 #
 #3) What are 2 ways indentation is important in python code?
-#a)indentation is important because we use it to know if the function is the child of another one. like def and we indent the return.
-#b)
+#a) The indentation is tells where the def starts and where it ends. 
+#b) The indentation defines the code blocks.
 #
 #
 
 #PART 2: Reading
 #Type the values for 9 of the 12 of the variables below.
 #
-#problem1_a) 
+#problem1_a) 36
 #problem1_b) 
-#problem1_c)
-#problem1_d)
+#problem1_c) 0 
+#problem1_d) -5
 #
 #problem2_a) True
-#problem2_b) True
+#problem2_b) False
 #problem2_c) False
 #problem2_d) False
 #
-#problem3_a) 0.03
+#problem3_a) 0.3
 #problem3_b) 0.5 
 #problem3_c) 0.5
 #problem3_d) 0.5 
 #
-#problem4_a) 5
-#problem4_b) 2
+#problem4_a) 7
+#problem4_b) 5
 #problem4_c) 
-#problem4_d) 4.5
+#problem4_d) 5
 #
 
 #PART 3: Programming
@@ -62,9 +62,9 @@ def result2(a, b, c)
 	return c
 		print The largest number is {}.
 
-
 def main():
 	a = raw_input("Type 3 different numbers")
+main()
 	
 
 
