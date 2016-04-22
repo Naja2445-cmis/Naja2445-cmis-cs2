@@ -4,10 +4,19 @@ def countup(n):
 	else:
 		print n
 		countup(n+1)
-
 def main():
-	countup(10)
-
+	countup(1)
 	return
-
 main()
+
+
+
+def countdownTo(start, stop)
+	if start == stop
+		print "Blastoff"
+	else: 
+		countdownTo(start -1, stop)
+countdownTo()
+		
+
+		
