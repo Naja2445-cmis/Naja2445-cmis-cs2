@@ -1,43 +1,46 @@
 #PART 1: Terminology
 #1) Give 3 examples of boolean expressions.
 #a) 4 * 8 == 1 * 32
-#b) 2 * 7 <= 8*6
+#b) 2 * 7 <= 8 * 6
 #c) 2 * 7 => 2 *4
-#
+
+# correct +3
+
 #2) What does 'return' do?
 #when you type return it will spits out something, like the variable of a function.  
 #
-#
+#correct +1
 #
 #3) What are 2 ways indentation is important in python code?
 #a) The indentation is tells where the def starts and where it ends. 
 #b) The indentation defines the code blocks.
 #
-#
+#correct +2
 
 #PART 2: Reading
 #Type the values for 9 of the 12 of the variables below.
 #
-#problem1_a) 36
+#problem1_a) -36
 #problem1_b) 
 #problem1_c) 0 
 #problem1_d) -5
-#
+# correct +3 
 #problem2_a) True
 #problem2_b) False
 #problem2_c) False
-#problem2_d) False
-#
+#problem2_d) True
+# correct +4
 #problem3_a) 0.3
 #problem3_b) 0.5 
 #problem3_c) 0.5
 #problem3_d) 0.5 
-#
+# correct +4
 #problem4_a) 7
 #problem4_b) 5
 #problem4_c) 
 #problem4_d) 5
-#
+
+# Correct 0 
 
 #PART 3: Programming
 #Write a script that asks the user to type in 3 different numbers.
@@ -65,6 +68,7 @@ def result2(a, b, c)
 def main():
 	a = raw_input("Type 3 different numbers")
 main()
-	
+
+Correct +1 +1 +1 +1 	
 
 
