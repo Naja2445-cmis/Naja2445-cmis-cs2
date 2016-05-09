@@ -4,7 +4,7 @@ import math
 def roundone(target, guessnum):
 	if target > "" :
 		print "That's too low". format(target, guessnum)
-	elif target == "":
+	else: target == "":
 		print "That's correct!!". format(target, guessnum)
 	else: 
 		print "That's too high". format(target, guessnum)
