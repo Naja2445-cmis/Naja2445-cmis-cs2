@@ -1,12 +1,15 @@
+#My game will ask you 7 common knowledge questions, the nquestions that you got correct, the score will be randomize by random.random or random.randint. If your score is more than 0.5, you pass. 
 import random
 import math
 def main():
-	Name = raw_input("What's your name?")
-	grade = raw_input("What grade are you in? ")
+	
+	Name = raw_input("""
+Let's see if you will pass this common knowledge test?! Good luck!
+What's your name? """)
 	p= point()
 	passfail = ""
-	if p:
-		passfail = "You Pass"
+	if p :
+		passfail ="You Pass"
 	else:
 		passfail = "You Fail"
 	x= output(Name,passfail)
@@ -22,7 +25,9 @@ c. apple
 d. watermelon
 (type a,b,c,d):
 		""")
-	if question1 == "a" or "b" or "d":
+	if question1 == "a" or "b":
+		return 0
+	elif question1 == "d":
 		return 0
 	elif question1 == "c":
 		return random.random()
@@ -38,7 +43,9 @@ c. santa elena cloud forest reserve
 d. tongass national forest
 (type a,b,c,d):
 		""")
-	if question2 == "c" or "b" or "d":
+	if question2 == "c" and "b":
+		return 0
+	elif question2 == "d":
 		return 0
 	elif question2 == "a":
 		return random.random()
@@ -54,7 +61,9 @@ c. Maine
 d. Alaska
 (type a,b,c,d):
 		""")
-	if question3 == "c" or "b" or "a":
+	if not question3 == "c" or question3== "b": 
+		return 0
+	elif question3 == "a":
 		return 0
 	elif question3 == "d":
 		return random.randint(0,2)
@@ -124,8 +133,8 @@ d. Virgin of the Rocks
 		return random.random()
 
 
-def calculate(a,b,c,d,e,f,g):
-	return a+b+c+d+e+f+g
+def calculate(questionA,questionB,questionC,questionD,questionE,questionF, questionG):
+	return questionA,questionB,questionC,questionD,questionE,questionF, questionG
 
 def point():
 	questionA= question1()
@@ -135,8 +144,8 @@ def point():
 	questionE= question5()
 	questionF= question6()
 	questionG= question7()
-	calA= calculate(questionA,questionB,questionC,questionD,questionE,questionF, questionG)
-	if calA >= 0.5:
+	calculation= calculate(questionA,questionB,questionC,questionD,questionE,questionF, questionG)
+	if calculation >= 1:
 		return True
 	else:
 		return False
