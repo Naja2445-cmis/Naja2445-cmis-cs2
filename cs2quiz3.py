@@ -13,11 +13,11 @@
 #
 # 4) How do we put data into a function call?
 #
-#
+#using parameters
 # 
 # 5) How do we get data out of a function call?
 #
-#
+#Put it into a variable or to return
 #
 
 #Section 2: Reading
@@ -30,15 +30,15 @@
 
 #b1 = 2
 #b2 = 2
-#b3 = 8
+#b3 = 4
 
-#c1 = 1
+#c1 = -2
 #c2 = 4
-#c3 = 19
+#c3 = 45
 
 #d1 = 6
 #d2 = 8
-#d3 = -4
+#d3 = 4
 
 #Section 3: Programming
 #Write a script that asks the user to enter a series of numbers.
@@ -49,9 +49,10 @@
 #It is NOT NECESSARY to print out a running total with each user input.
 
 
-def calculation(RunningTotal):    
-    addno = raw_input("Numeber: ")
-    if addno != "":
+def calculation(x, counting):    
+    numbers = raw_input("Numeber: ")
+    if addno == "":
+    	
         print "Running total: ", RunningTotal + float(addno)
         calculation(RunningTotal + float(addno))
     else:
