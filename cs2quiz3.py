@@ -24,20 +24,20 @@
 # Read the following function definitions and function calls.
 # Then determine the values of the variables q1-q20.
 
-#a1 = 8
-#a2 = 8
+#a1 = 8  X
+#a2 = 6
 #a3 = -1
 
 #b1 = 2
-#b2 = 2
-#b3 = 4
+#b2 = 2 X
+#b3 = 4 X
 
 #c1 = -2
 #c2 = 4
-#c3 = 45
+#c3 = 5
 
-#d1 = 6
-#d2 = 8
+#d1 = 6 X
+#d2 = 8 X
 #d3 = 4
 
 #Section 3: Programming
