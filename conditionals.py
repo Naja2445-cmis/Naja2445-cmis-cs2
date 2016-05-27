@@ -32,7 +32,8 @@ c. apple
 d. watermelon
 (type a,b,c,d):
 		""")
-	if questionone == "a" or "b" 0r "d": 
+	if questionone == "a" or "b" or "d": 
+			print "Wrong"			
 			return 0
 	elif questionone == "c":
 			return random.random()
@@ -49,13 +50,14 @@ c. santa elena cloud forest reserve
 d. tongass national forest
 (type a,b,c,d):
 		""")
-	if questiontwo != "a" or "b" or "c" or "d":
+	if questiontwo != "a" and questiontwo != "b" and questiontwo != "c" and questiontwo !="d":
 		print "please type in a, b, c, or d"
 		question2()
 	else:
-		if questionetwo == "a":
+		if questiontwo == "a":
 			return random.random()
 		else: 
+			print "Wrong"
 			return 0
 		
 def question3():
@@ -67,13 +69,14 @@ c. Maine
 d. Alaska
 (type a,b,c,d):
 		""")
-	if questionthree != "a" or "b" or "c" or "d":
+	if questionthree != "a" and questionthree !="b" and questionthree !="c" and questionthree !="d":
 		print "please type in a, b, c, or d"
 		question3()
 	else:
 		if questionthree == "d":
 			return random.randint(0,2)
 		else: 
+			print "Wrong"			
 			return 0
 
 def question4():
@@ -85,15 +88,15 @@ c. Percy Jackson
 d. Hades
 (type a,b,c,d):
 		""")
-	if questionfour != "a" or "b" or "c" or "d":
-		print "please type in a, b, c, or d"
+	if questionfour == "a"  or questionfour == "c" or questionfour == "d":
+		print "Wrong"
+		return 0
 		question4()
-	else:
-		if questionfour == "b":
-			return random.random()
-		else: 
-			return 0
-		
+	elif questionfour == "b":
+		return random.random()
+	else: 
+		print "Type in a,b,c,d"
+	
 
 def question5():
 	questionfive = raw_input("""
@@ -104,13 +107,14 @@ c. 7
 d. 5
 (type a, b, c, d):
 		""")
-	if questionfive != "a" or "b" or "c" or "d":
+	if questionfive != "a" and questionfive != "b" and questionfive != "c" and questionfive != "d":
 		print "please type in a, b, c, or d"
 		question5()
 	else:
-		if questionfive == "c":
+		if questionfive == "d":
 			return random.random()
-		else: 
+		else:
+			print "Wrong" 
 			return 0
 		
 		
@@ -123,13 +127,14 @@ c. India
 d. United States
 (type a, b, c, d):
 		""")
-	if questionsix != "a" or "b" or "c" or "d":
+	if questionsix != "a" and questionsix != "b" and questionsix != "c" and questionsix != "d":
 		print "please type in a, b, c, or d"
 		question6()
 	else:
-		if questionsix == "c":
+		if questionsix == "b":
 			return random.randint(1, 3)
 		else: 
+			print "Wrong"
 			return 0
 
 def question7():
@@ -142,18 +147,19 @@ d. Virgin of the Rocks
 (type a, b, c, d):
 		""")
 
-	if questionseven != "a" or "b" or "c" or "d":
+	if questionseven != "a" and questionseven != "b" and questionseven != "c" and questionseven != "d":
 		print "please type in a, b, c, or d"
 		question7()
 	else:
-		if questionseven == "c":
-			return random.random()
-		else: 
+		if not questionseven == "c":
+			print "Wrong"
 			return 0
+		else: 
+			return random.random()
 		
 
 def calculate(questionA,questionB,questionC,questionD,questionE,questionF, questionG):
-	return questionA,questionB,questionC,questionD,questionE,questionF, questionG
+	return questionA+questionB+questionC+questionD+questionE+questionF+ questionG
 
 def point():
 	questionA= question1()
@@ -164,7 +170,8 @@ def point():
 	questionF= question6()
 	questionG= question7()
 	calculation= calculate(questionA,questionB,questionC,questionD,questionE,questionF, questionG)
-	if calculation >= 0.5:
+	print "Your score is " + str(calculation)
+	if calculation >= 1.5:
 		return True
 	else:
 		return False
