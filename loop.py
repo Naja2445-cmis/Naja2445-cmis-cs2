@@ -1,3 +1,6 @@
+
+
+
 #while True:
 #	print ":)"
 
@@ -27,12 +30,30 @@
 #		print x
 #		x-= y
 
-def addodd(n):
-	if n % 2 != 0:
-		while n >= 0: 
-			return n 
-			n += 1
-	
+#def addodd(n):
+#	if n > 0:
+#		while n > 0:
+#			if n % 2 == 1:
+#			 	sum += n
+#			n -= 1
+#	elif n < 0: 
+#		while n < 0:
+#			if n % 2 == 1:
+#			 	sum -= n
+#			n += 1
+#	print sum
+
+
+def grid(w, h):
+	out = ""
+	x = 0
+	while x < w:
+		out += "."
+		x += 1	 
+	return out
+		
+
+
 
 
 #countxandy(5, 10)
@@ -40,3 +61,5 @@ def addodd(n):
 
 #countdown(10)
 #countup(0)
+
+print grid(18, 20)
